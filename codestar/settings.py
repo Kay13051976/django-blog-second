@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kay13051976-djangoblogs-ic56lfsrdok.ws-eu107.gitpod.io',
-                 'django-blog-second.herokuapp.com', 'localhost']
+                 'django-blog-second-fc00f065b204.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default' : dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
