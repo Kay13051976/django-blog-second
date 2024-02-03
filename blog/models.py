@@ -22,14 +22,9 @@ class Post(models.Model):
     )
 
     class Meta:
-        """ class Meta Allow you to specify various options for the model,
-        ordering is used to specify the default ordering for the model's
-        database queries """
         ordering = ["-created_on"]
 
     def __str__(self):
-        """ A special method that is used to define the user-friendly
-    string representation of an object """
         return self.title
 
     def number_of_likes(self):
