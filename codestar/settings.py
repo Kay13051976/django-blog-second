@@ -29,7 +29,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['8000-kay13051976-djangoblogs-ic56lfsrdok.ws-eu107.gitpod.io',
                  '8000-kay13051976-djangoblogs-m1dtif7u3ip.ws-eu108.gitpod.io',
